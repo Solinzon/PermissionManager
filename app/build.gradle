@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'me.ele.lancet'
 
 android {
     compileSdkVersion 26
@@ -25,4 +26,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+//    compile project(':api')
+//    annotationProcessor project(':compiler')
+    annotationProcessor 'com.solinzon:permissionmanager-compiler:1.0.1-beta1'
+    compile 'com.solinzon:permissionmanager:1.0.1-Beta1'
 }
