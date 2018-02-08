@@ -1,13 +1,15 @@
-# PermissionManager 安卓动态权限申请库
-**AOP部分基于[Lacet](https://github.com/eleme/lancet/blob/dev/README_zh.md)实现**
-##使用方式：
-###1.引入依赖
+# PermissionManager 
+## 安卓动态权限申请库  
+**AOP部分基于[Lancet](https://github.com/eleme/lancet/blob/dev/README_zh.md)实现**  
+## 使用方式：  
+### 1.引入依赖  
 
 ```
 annotationProcessor 'com.solinzon:permissionmanager-compiler:1.0.1-beta1'
 compile 'com.solinzon:permissionmanager:1.0.1-Beta1'
 ```
-###2.添加Lancet支持
+
+### 2.添加Lancet支持
 
 
 在根目录的 build.gradle 添加:
@@ -22,7 +24,7 @@ dependencies{
 ```
 apply plugin: 'me.ele.lancet'
 ```
-###3.使用示例  
+### 3.使用示例  
 1.在需要请求权限的Activity上添加`@NeedPermission`注解。  
 如：
 
@@ -66,5 +68,5 @@ protected void onCreate(Bundle savedInstanceState) {
 ```  
 **完整示例：**[点击这里](https://github.com/Solinzon/PermissionManager/blob/master/app/src/main/java/com/xushuzhan/permissionmanager/MainActivity.java)  
 
-##注意事项  
+## 注意事项  
 处在开发阶段，还有许多TODO尚未完成，仅仅适合与学习交流。**暂不适合用于生产环境。**
